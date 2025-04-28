@@ -24,7 +24,7 @@ export function ExperienceCard({
     textOne:
       "text-smallBody lg:text-smallSubheader text-fontColor-secondary p-0 font-header",
     textTwo:
-      "text-smallBody lg:text-smallSubheader text-bold text-fontColor-lightAccent p-0 font-header",
+      "text-smallBody lg:text-smallSubheader text-bold text-fontColor-darkAccent p-0 font-header bg-components-secondary",
     openIcon: "absolute top-2 right-2",
   };
 

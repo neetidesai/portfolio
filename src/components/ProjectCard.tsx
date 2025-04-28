@@ -24,7 +24,7 @@ export function ProjectCard({
     description:
       "text-smallButton lg:text-smallBody text-fontColor-secondary font-body",
     tageContainer: "flex flex-wrap justify-center items-center gap-2 mt-6",
-    tag: "text-smallButton lg:text-smallBody text-fontColor-secondary bg-components-accent rounded-full px-2 py-1 font-body",
+    tag: "text-smallButton lg:text-smallBody text-fontColor-darkAccent bg-components-secondary rounded-full px-2 py-1 font-body",
     openIcon: "absolute top-2 right-2",
   };
   return (

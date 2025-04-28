@@ -25,7 +25,7 @@ const styles = {
   itemContainer: "relative flex h-12 items-center",
   largeScreenContainer:
     "flex flex-1 items-center justify-center sm:items-stretch sm:justify-end",
-  selectedItem: "bg-components-accent text-fontColor-lightAccent",
+  selectedItem: "bg-components-secondary text-fontColor-lightAccent",
   header:
     "text-fontColor-darkAccent text-largeSubheader hidden md:flex px-3 font-header font-bold",
   unselectedItem:

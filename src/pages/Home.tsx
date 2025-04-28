@@ -15,7 +15,7 @@ const Home = () => {
       "flex w-full flex-row items-center bg-components-background md:gap-10 lg:gap-20 px-5 md:px-10 mb-20",
     quickInfoContainer: "justify-center items-center w-full p-5 md:p-10",
     title:
-      "p-5 text-smallHeader md:text-largeHeader text-components-primary font-header",
+      "p-5 text-smallHeader md:text-largeHeader text-components-secondary font-header",
     headshot:
       "w-full h-auto max-w-full object-contain object-left rounded-full",
     imageContainer: "w-1/2 md items-left justify-left pl-5 lg:pl-10",
@@ -65,7 +65,7 @@ const Home = () => {
               onClick={() => {
                 window.open("/resume.pdf");
               }}
-              background={true}
+              background
             />
           </div>
 
