@@ -8,10 +8,10 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "home", href: "#", current: true },
-  { name: "about", href: "#", current: false },
-  { name: "projects", href: "#", current: false },
-  { name: "experience", href: "#", current: false },
+  { name: "home", href: "/", current: true },
+  { name: "about", href: "/about", current: false },
+  { name: "experience", href: "/experience", current: false },
+  { name: "projects", href: "/projects", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -25,7 +25,7 @@ const styles = {
   itemContainer: "relative flex h-12 items-center",
   largeScreenContainer:
     "flex flex-1 items-center justify-center sm:items-stretch sm:justify-end",
-  selectedItem: "bg-components-secondary text-fontColor-lightAccent",
+  selectedItem: "bg-components-background text-fontColor-lightAccent",
   header:
     "text-fontColor-darkAccent text-largeSubheader hidden md:flex px-3 font-header font-bold",
   unselectedItem:

@@ -2,7 +2,8 @@ import React from "react";
 
 const About = () => {
   const styles = {
-    container: "flex flex-col items-center justify-center h-screen bg-gray-100",
+    container:
+      "flex flex-col items-center justify-center h-screen bg-components-background",
     title: "text-4xl font-bold text-gray-800",
     description: "mt-4 text-lg text-gray-600",
     link: "mt-6 text-blue-500 hover:underline",

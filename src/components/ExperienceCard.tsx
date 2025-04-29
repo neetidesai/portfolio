@@ -22,7 +22,7 @@ export function ExperienceCard({
     image: "w-20 h-20 object-contain flex-shrink-0 mx-4",
     textContainer: "flex flex-col pr-10",
     textOne:
-      "text-smallBody lg:text-smallSubheader text-fontColor-secondary p-0 font-header",
+      "text-smallBody lg:text-smallSubheader text-fontColor-secondary pb-2 font-header",
     textTwo:
       "text-smallBody lg:text-smallSubheader text-bold text-fontColor-darkAccent p-0 font-header bg-components-secondary",
     openIcon: "absolute top-2 right-2",
@@ -41,7 +41,7 @@ export function ExperienceCard({
 
   return (
     <div className={styles.container}>
-      {logo && <img src={logo} className={styles.image} />}
+      <img src={logo} className={styles.image} />
       <div className={styles.textContainer}>
         <h1 className={styles.textOne}>
           {wrapHyphenatedWords(`${title} at `)}
