@@ -29,12 +29,12 @@ const styles = {
   header:
     "text-fontColor-darkAccent text-largeSubheader hidden md:flex px-3 font-header font-bold",
   unselectedItem:
-    "text-fontColor-darkAccent hover:bg-components-background hover:text-fontColor-lightAccent hover:opacity-75",
+    "text-fontColor-darkAccent hover:bg-components-accent hover:text-fontColor-darkAccent",
   menuItemsFullScreen: "rounded-md px-3 py-2 font-largeBody font-bold",
   menuItemsSmallScreen:
     "block rounded-md px-3 py-2 text-base font-largeBody font-bold",
   mobileButton:
-    "group relative inline-flex items-center justify-center rounded-md p-2 text-fontColor-darkAccent hover:bg-components-background hover:opacity-75 hover:text-fontColor-lightAccent focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset",
+    "group relative inline-flex items-center justify-center rounded-md p-2 text-fontColor-darkAccent hover:bg-components-primary/15 hover:text-fontColor-darkAccent focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset",
 };
 
 export default function NavBar() {

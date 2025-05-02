@@ -18,7 +18,7 @@ export function TextButton({
     <Button
       size="sm"
       variant="text"
-      className={`flex items-center text-smallButton md:text-largeButton font-header ${background ? "bg-components-secondary hover:bg-components-primary text-fontColor-darkAccent" : "text-fontColor-primary hover:text-components-secondary"} p-2`}
+      className={`flex items-center text-smallButton md:text-largeButton font-header ${background ? "bg-components-secondary hover:bg-components-accent text-fontColor-darkAccent" : "text-fontColor-primary hover:text-fontColor-lightAccent"} p-2`}
       placeholder=""
       onPointerEnterCapture={() => {}}
       onPointerLeaveCapture={() => {}}

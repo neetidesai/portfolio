@@ -1,11 +1,11 @@
 import React from "react";
 import { ExperienceCard } from "../components/ExperienceCard";
 import { IconButton } from "../components/IconButton";
-import { Button } from "@material-tailwind/react";
-import { FaLongArrowAltRight, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { TextButton } from "../components/TextButton";
 import { ProjectCard } from "../components/ProjectCard";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const styles = {
@@ -38,6 +38,8 @@ const Home = () => {
   const EmailIcon = MdEmail as React.ComponentType<
     React.SVGProps<SVGSVGElement>
   >;
+
+  const navigate = useNavigate();
 
   return (
     <div className={styles.container}>
@@ -96,33 +98,39 @@ const Home = () => {
       <div className={styles.cardContainer}>
         <div className={styles.subHeader}>
           <h1 className={styles.headers}>Experience</h1>
-          <TextButton text="See all experience" onClick={() => {}} />
+          <TextButton
+            text="See all experience"
+            onClick={() => navigate("/experience")}
+          />
         </div>
         <div className={styles.experienceCardContainer}>
           <ExperienceCard
             title="Software Engineer Co-op"
             company="Morse Corp"
             logo="/morse.jpeg"
-            onClick={() => {}}
+            onClick={() => window.open("/experience#morse", "_blank")}
           />
           <ExperienceCard
             title="Software Engineer Co-op"
             company="E Ink"
             logo="/e-ink.png"
-            onClick={() => {}}
+            onClick={() => window.open("/experience#e-ink", "_blank")}
           />
           <ExperienceCard
             title="Discrete Structures Teaching Assistant"
             company="Northeastern University"
             logo="/northeastern.png"
-            onClick={() => {}}
+            onClick={() => window.open("/experience#northeastern", "_blank")}
           />
         </div>
       </div>
       <div className={styles.cardContainer}>
         <div className={styles.subHeader}>
           <h1 className={styles.headers}>Projects</h1>
-          <TextButton text="See all projects" onClick={() => {}} />
+          <TextButton
+            text="See all projects"
+            onClick={() => navigate("/projects")}
+          />
         </div>
         <div className={styles.experienceCardContainer}>
           <ProjectCard

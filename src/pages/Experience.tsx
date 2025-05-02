@@ -1,17 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ExpandedExperienceCard } from "../components/ExpandedExperienceCard";
+import { useLocation } from "react-router-dom";
 
 const Experience = () => {
   const styles = {
     container:
       "flex flex-col w-full items-center justify-center bg-components-background min-h-screen overflow-y-auto pt-28 pb-20",
-    title: "text-4xl font-bold text-gray-800",
-    description: "mt-4 text-lg text-gray-600",
-    link: "mt-6 text-blue-500 hover:underline",
     headers:
       "text-fontColor-primary text-smallSubheader md:text-largeSubheader text-left w-3/4 mb-1 font-header",
     subContainer: "flex flex-col w-full items-center justify-center pb-10",
+    linkContainer: "flex flex-col w-full items-center justify-center ",
   };
+
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        const headerOffset = 60;
+
+        window.scrollTo({
+          top: (element as HTMLElement).offsetTop - headerOffset,
+          behavior: "smooth",
+        });
+      }
+    }
+  }, [hash]);
 
   return (
     <div className={styles.container}>
@@ -31,30 +46,36 @@ const Experience = () => {
 
       <div className={styles.subContainer}>
         <h1 className={styles.headers}>Work Experience</h1>
-        <ExpandedExperienceCard
-          title={"Software Engineer Co-op at Morse Corp."}
-          logo={"/morse.jpeg"}
-          description={
-            "Designed, developed, and deployed 15+ user-driven features for computer vision testing Python software packages in the JATIC project, contributing to three MVPs for the Chief Digital and AI Office.\nUtilized PySpark to optimize ETL pipelines and execute complex data transformations.\nIntegrated packages within existing machine learning pipelines.\nDeveloped features to optimize model performance by identifying mislabeled data and classifying data difficulty within training sets.\nActively contributed in Agile ceremonies, including daily stand-ups, sprint retrospectives, and feature demos.\nEffectively leveraged software development best practices, achieving 100% test coverage of software capabilities with unit and integration tests and writing robust end user documentation utilizing the Diataxis framework."
-          }
-          dates={"Jan. 2024 - Aug. 2024"}
-        />
-        <ExpandedExperienceCard
-          title={"Software Engineer Co-op at E Ink"}
-          logo={"/e-ink.png"}
-          description={
-            "Independently designed and developed software to view color intensity and transitions on early-stage electronic ink panel prototypes, using Python and OpenCV in a Linux environment. Integrated onto panel drivers and oversaw release.\nLed experimental effort to display videos on panels, writing Python scripts to experiment with transition times.\nWorked with a cross-functional team of 5 to develop software to demo prototype capabilities for customers, incorporating low-level Bash scripting for automation and system-level tasks.\nIdentified an opportunity and completed transition of filesystem based code versioning process to SVN."
-          }
-          dates={"Jan. 2023 - Jul. 2023"}
-        />
-        <ExpandedExperienceCard
-          title={"Discrete Structures Teaching Assistant"}
-          logo={"/northeastern.png"}
-          description={
-            "Hosted weekly office hours and helped an average of 15 students per session. Graded assignments and exams."
-          }
-          dates={"Sep. 2022 - Dec. 2022"}
-        />
+        <div id="morse" className={styles.linkContainer}>
+          <ExpandedExperienceCard
+            title={"Software Engineer Co-op at Morse Corp."}
+            logo={"/morse.jpeg"}
+            description={
+              "Designed, developed, and deployed 15+ user-driven features for computer vision testing Python software packages in the JATIC project, contributing to three MVPs for the Chief Digital and AI Office.\nUtilized PySpark to optimize ETL pipelines and execute complex data transformations.\nIntegrated packages within existing machine learning pipelines.\nDeveloped features to optimize model performance by identifying mislabeled data and classifying data difficulty within training sets.\nActively contributed in Agile ceremonies, including daily stand-ups, sprint retrospectives, and feature demos.\nEffectively leveraged software development best practices, achieving 100% test coverage of software capabilities with unit and integration tests and writing robust end user documentation utilizing the Diataxis framework."
+            }
+            dates={"Jan. 2024 - Aug. 2024"}
+          />
+        </div>
+        <div id="e-ink" className={styles.linkContainer}>
+          <ExpandedExperienceCard
+            title={"Software Engineer Co-op at E Ink"}
+            logo={"/e-ink.png"}
+            description={
+              "Independently designed and developed software to view color intensity and transitions on early-stage electronic ink panel prototypes, using Python and OpenCV in a Linux environment. Integrated onto panel drivers and oversaw release.\nLed experimental effort to display videos on panels, writing Python scripts to experiment with transition times.\nWorked with a cross-functional team of 5 to develop software to demo prototype capabilities for customers, incorporating low-level Bash scripting for automation and system-level tasks.\nIdentified an opportunity and completed transition of filesystem based code versioning process to SVN."
+            }
+            dates={"Jan. 2023 - Jul. 2023"}
+          />
+        </div>
+        <div id="northeastern" className={styles.linkContainer}>
+          <ExpandedExperienceCard
+            title={"Discrete Structures Teaching Assistant"}
+            logo={"/northeastern.png"}
+            description={
+              "Hosted weekly office hours and helped an average of 15 students per session. Graded assignments and exams."
+            }
+            dates={"Sep. 2022 - Dec. 2022"}
+          />
+        </div>
       </div>
 
       <div className={styles.subContainer}>
