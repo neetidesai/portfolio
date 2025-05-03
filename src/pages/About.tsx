@@ -62,7 +62,7 @@ const About = () => {
         <div className={styles.col}>
           <div className={styles.bookContainer}>
             <img src="/current-book.jpeg" className={"pb-3"} />
-            <h1 className={styles.caption}>Currently Reading</h1>
+            <h1 className={styles.caption}>My current read</h1>
           </div>
 
           <div className={styles.col}>
