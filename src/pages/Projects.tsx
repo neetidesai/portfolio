@@ -115,7 +115,7 @@ const Projects = () => {
       />
       <ExpandedProjectCard
         title="Image Processor"
-        description="An image editing application with the ability to load, filter and edit, and 
+        description="An image editing application with the ability to load, filter, edit, and 
         save an image, as well as visualize the color distributions of the image. Utilizes several 
         OOD design principles including Model, View, Controller, 
         and the command design pattern."
