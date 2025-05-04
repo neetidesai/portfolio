@@ -40,12 +40,7 @@ export function ExpandedProjectCard({
   return (
     <div className={styles.container}>
       {imageSrc.map((src, index) => (
-        <img
-          key={index}
-          src={src}
-          className={styles.image}
-          alt={"project image"}
-        />
+        <img key={index} src={src} className={styles.image} alt={"project"} />
       ))}
       <div className={styles.subContainer}>
         <h1 className={styles.title}>{title}</h1>

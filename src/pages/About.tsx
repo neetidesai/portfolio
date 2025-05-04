@@ -70,16 +70,8 @@ const About = () => {
 
           <div className={styles.col}>
             <div className={styles.foodContainer}>
-              <img
-                src="/food1.jpeg"
-                className={styles.photo}
-                alt={"food image"}
-              />
-              <img
-                src="/food2.jpeg"
-                className={styles.photo}
-                alt={"food image"}
-              />
+              <img src="/food1.jpeg" className={styles.photo} alt={"food"} />
+              <img src="/food2.jpeg" className={styles.photo} alt={"food"} />
             </div>
             <h1 className={`${styles.caption} text-center`}>
               Some recent food favorites
@@ -93,18 +85,18 @@ const About = () => {
               <div className={styles.row}>
                 <img
                   src="/travel1.jpeg"
-                  alt={"travel image"}
+                  alt={"travel"}
                   className={styles.photo}
                 />
                 <img
                   src="/travel2.jpeg"
-                  alt={"travel image"}
+                  alt={"travel"}
                   className={styles.photo}
                 />
               </div>
               <img
                 src="/travel3.jpeg"
-                alt={"travel image"}
+                alt={"travel"}
                 className={styles.photo}
               />
             </div>
