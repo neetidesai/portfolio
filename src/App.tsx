@@ -9,6 +9,7 @@ import Projects from "./pages/Projects";
 import Experience from "./pages/Experience";
 import { ThemeProvider } from "@material-tailwind/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import CopyrightBanner from "./components/CopyrightBanner";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/experience" element={<Experience />} />
           </Routes>
+          <CopyrightBanner />
         </Router>
       </div>
     </ThemeProvider>

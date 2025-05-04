@@ -16,7 +16,7 @@ export function IconButton({
     <Button
       size="sm"
       variant="text"
-      className="flex items-center text-smallButton md:text-largeButton p-2 hover:bg-components-primary/15"
+      className="flex items-center text-smallButton md:text-largeButton p-2 hover:bg-components-secondary"
       placeholder=""
       onPointerEnterCapture={() => {}}
       onPointerLeaveCapture={() => {}}
