@@ -21,7 +21,7 @@ const Projects = () => {
     if (hash) {
       const element = document.querySelector(hash);
       if (element) {
-        const headerOffset = 60;
+        const headerOffset = 40;
 
         window.scrollTo({
           top: (element as HTMLElement).offsetTop - headerOffset,
@@ -33,30 +33,33 @@ const Projects = () => {
 
   return (
     <div className={styles.container}>
-      <ExpandedProjectCard
-        title="Stack Overgram"
-        description="I co-developed StackOvergram, a play on StackOverflow and Instagram that 
+      <div id="stack-overgram">
+        <ExpandedProjectCard
+          title="Stack Overgram"
+          description="I co-developed StackOvergram, a play on StackOverflow and Instagram that 
         allows users to ask and answer questions, as well as customize their unique profile and 
         follow other users, with user activity consolidated in a feed. This project leveraged 
         MongoDB, Typescript, and Express to build a RESTful API and React.js and Typescript for 
         frontend development. Some features I was responsible for were handling user creation and authentication
         using Google Firebase, utilizing websockets for real-time notification updates, and implementing
         both the frontend and backend logic for a customizable profile page."
-        github_link="https://github.com/neu-cs4530/fall24-team-project-group-112"
-        tags={[
-          "React",
-          "Typescript",
-          "Google Firebase",
-          "Express.js",
-          "MongoDB",
-        ]}
-        alignment="left"
-        imageSrc={["/stack-overgram1.png"]}
-      />
+          github_link="https://github.com/neu-cs4530/fall24-team-project-group-112"
+          tags={[
+            "React",
+            "Typescript",
+            "Google Firebase",
+            "Express.js",
+            "MongoDB",
+          ]}
+          alignment="left"
+          imageSrc={["/stack-overgram1.png"]}
+        />
+      </div>
 
-      <ExpandedProjectCard
-        title="Shelterlink"
-        description="Shelterlink is a project developed by Northeastern's Code4Community, a student 
+      <div id="shelterlink">
+        <ExpandedProjectCard
+          title="Shelterlink"
+          description="Shelterlink is a project developed by Northeastern's Code4Community, a student 
         organization dedicated to building software solutions for nonprofits in the Boston area. 
         Shelterlink is an iOS app built using React native, Typescript, and DynamoDB that connects 
         unhoused youth to shelters and other resources in the Boston area. I was the technical lead on 
@@ -66,27 +69,37 @@ const Projects = () => {
         completed development work on this project, notably handing user autherntication using AWS 
         Cognito, as well as designing all backend specifications and some frontend screens, including 
         the detailed shelter screen shown in the two rightmost images."
-        tags={["React", "JavaScript", "DynamoDB", "AWS Cognito", "AWS Amplify"]}
-        github_link="https://github.com/Code-4-Community/shelter-link"
-        alignment="right"
-        imageSrc={[
-          "/shelterlink1.PNG",
-          "/shelterlink2.PNG",
-          "/shelterlink3.jpeg",
-        ]}
-      />
-      <ExpandedProjectCard
-        title="Green Infrastructure Boston"
-        description="Green Infrastructure Boston is a project developed by Northeastern's Code4Community, a student 
+          tags={[
+            "React",
+            "JavaScript",
+            "DynamoDB",
+            "AWS Cognito",
+            "AWS Amplify",
+          ]}
+          github_link="https://github.com/Code-4-Community/shelter-link"
+          alignment="right"
+          imageSrc={[
+            "/shelterlink1.PNG",
+            "/shelterlink2.PNG",
+            "/shelterlink3.jpeg",
+          ]}
+        />
+      </div>
+
+      <div id="gi-boston">
+        <ExpandedProjectCard
+          title="Green Infrastructure Boston"
+          description="Green Infrastructure Boston is a project developed by Northeastern's Code4Community, a student 
         organization dedicated to building software solutions for nonprofits in the Boston area. 
         This project is a webapp that allows users to find where green infrastructure is located in Boston, including 
         trees, shrubs, and other greenery, through an interactive map. Users can apply to adopt infrastructure 
         and log their caretaking activities in the app."
-        github_link="https://github.com/Code-4-Community/green-infrastructure"
-        tags={["React", "Typescript", "DynamoDB", "AWS Lambda", "AWS SES"]}
-        alignment="left"
-        imageSrc={["/giboston.png"]}
-      />
+          github_link="https://github.com/Code-4-Community/green-infrastructure"
+          tags={["React", "Typescript", "DynamoDB", "AWS Lambda", "AWS SES"]}
+          alignment="left"
+          imageSrc={["/giboston.png"]}
+        />
+      </div>
       <ExpandedProjectCard
         title="Taylor Swiftalyzer"
         description="The Taylor Swiftalyzer was a project completed for my Natural Language 
@@ -108,7 +121,7 @@ const Projects = () => {
         and the command design pattern."
         github_link="https://github.com/neetidesai/Image-Processor"
         tags={["Java"]}
-        alignment="right"
+        alignment="left"
         imageSrc={["/imageprocessor.png"]}
       />
     </div>

@@ -54,11 +54,13 @@ const Home = () => {
         <div className={styles.quickInfoContainer}>
           <h1 className={styles.title}>Hi, I'm Neeti</h1>
           <p className={styles.summaryText}>
-            I am a software engineer who loves building things that matter. I
-            recently graduated from Northeastern University with a bachelor's
-            degree in computer science and behavioral neuroscience. I have
-            experience in full-stack development, machine learning, and data
-            science, and am excited to develop my skillset as I start my career!
+            I recently graduated from Northeastern University's honors program
+            with a bachelor's degree in computer science and behavioral
+            neuroscience. Currently, I am a full-stack software engineer at
+            Morse Corp. in Cambridge, MA. I also have experience in machine
+            learning and data science, and am excited to grow and develop my
+            skills as an engineer! I would love to connect - my github,
+            linkedin, and email are linked below.
           </p>
 
           <div className={styles.iconContainer}>
@@ -139,19 +141,19 @@ const Home = () => {
             as well as customize their unique profile and follow other users, with user activity consolidated 
             in a chronological feed."
             tags={["React.js", "Typescript", "MongoDB", "Firebase"]}
-            onClick={() => {}}
+            onClick={() => window.open("/projects#stack-overgram", "_blank")}
           />
           <ProjectCard
             title="Shelterlink"
             description="An iOS app that connects unhoused youth in the Boston area to shelters and other resources near them."
             tags={["React Native", "Typescript", "DynamoDB", "AWS Amplify"]}
-            onClick={() => {}}
+            onClick={() => window.open("/projects#shelterlink", "_blank")}
           />
           <ProjectCard
             title="Green Infrastructure Boston"
             description="Promotes collective ownership of Boston's green infrastructure by allowing users to adopt greenery in the city (trees, shrubs, and more), and log their caretaking activities."
             tags={["React.js", "Typescript", "DynamoDB"]}
-            onClick={() => {}}
+            onClick={() => window.open("/projects#gi-boston", "_blank")}
           />
         </div>
       </div>
