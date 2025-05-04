@@ -1,7 +1,4 @@
 import React from "react";
-import { IoMdOpen } from "react-icons/io";
-import { IconButton } from "./IconButton";
-import { TextButton } from "./TextButton";
 
 interface ExpandedProjectCardProps {
   title: string;
@@ -43,7 +40,12 @@ export function ExpandedProjectCard({
   return (
     <div className={styles.container}>
       {imageSrc.map((src, index) => (
-        <img key={index} src={src} className={styles.image} />
+        <img
+          key={index}
+          src={src}
+          className={styles.image}
+          alt={"project image"}
+        />
       ))}
       <div className={styles.subContainer}>
         <h1 className={styles.title}>{title}</h1>

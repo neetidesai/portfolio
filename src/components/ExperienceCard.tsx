@@ -1,7 +1,6 @@
 import React from "react";
 import { IoMdOpen } from "react-icons/io";
 import { IconButton } from "./IconButton";
-import { text } from "stream/consumers";
 
 interface ExperienceCardProps {
   title: string;
@@ -41,7 +40,7 @@ export function ExperienceCard({
 
   return (
     <div className={styles.container}>
-      <img src={logo} className={styles.image} />
+      <img src={logo} className={styles.image} alt={"company logo"} />
       <div className={styles.textContainer}>
         <h1 className={styles.textOne}>
           {wrapHyphenatedWords(`${title} at `)}

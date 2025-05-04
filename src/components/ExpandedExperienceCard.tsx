@@ -69,7 +69,7 @@ export function ExpandedExperienceCard({
 
   return (
     <div className={styles.container}>
-      <img src={logo} className={styles.image} />
+      <img src={logo} className={styles.image} alt={"company logo"} />
       <div className={styles.contentContainer}>
         <div className={styles.headerAndArrow}>
           <div className={styles.headerRow}>

@@ -1,5 +1,4 @@
 import React from "react";
-import { KnowledgeCard } from "../components/KnowledgeCard";
 import { TechnicalKnowledgeTabs } from "../components/TechnicalKnowledgeTabs";
 import { Link } from "react-router-dom";
 
@@ -61,14 +60,26 @@ const About = () => {
       <div className={styles.row}>
         <div className={styles.col}>
           <div className={styles.bookContainer}>
-            <img src="/current-book.jpeg" className={"pb-3"} />
+            <img
+              src="/current-book.jpeg"
+              alt={"book cover"}
+              className={"pb-3"}
+            />
             <h1 className={styles.caption}>My current read</h1>
           </div>
 
           <div className={styles.col}>
             <div className={styles.foodContainer}>
-              <img src="/food1.jpeg" className={styles.photo} />
-              <img src="/food2.jpeg" className={styles.photo} />
+              <img
+                src="/food1.jpeg"
+                className={styles.photo}
+                alt={"food image"}
+              />
+              <img
+                src="/food2.jpeg"
+                className={styles.photo}
+                alt={"food image"}
+              />
             </div>
             <h1 className={`${styles.caption} text-center`}>
               Some recent food favorites
@@ -80,10 +91,22 @@ const About = () => {
           <div className={styles.travelContainer}>
             <div className={styles.col}>
               <div className={styles.row}>
-                <img src="/travel1.jpeg" className={styles.photo} />
-                <img src="/travel2.jpeg" className={styles.photo} />
+                <img
+                  src="/travel1.jpeg"
+                  alt={"travel image"}
+                  className={styles.photo}
+                />
+                <img
+                  src="/travel2.jpeg"
+                  alt={"travel image"}
+                  className={styles.photo}
+                />
               </div>
-              <img src="/travel3.jpeg" className={styles.photo} />
+              <img
+                src="/travel3.jpeg"
+                alt={"travel image"}
+                className={styles.photo}
+              />
             </div>
             <h1 className={styles.caption}>Photos from my trip to Hawaii!</h1>
           </div>
