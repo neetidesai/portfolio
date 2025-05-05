@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const styles = {
     container:
-      "flex flex-col items-center justify-center bg-components-background w-full min-h-screen overflow-y-auto py-20",
+      "flex flex-col items-center justify-center bg-components-background w-full min-h-screen overflow-y-auto pt-20",
     headshotAboutContainer:
       "flex w-full flex-row items-center bg-components-background md:gap-10 lg:gap-20 px-5 md:px-10 mb-20",
     quickInfoContainer: "justify-center items-center w-full p-5 md:p-10",
@@ -21,12 +21,13 @@ const Home = () => {
     imageContainer: "w-1/2 md items-left justify-left pl-5 lg:pl-10",
     summaryText:
       "text-fontColor-primary text-smallBody md:text-largeBody font-body",
-    cardContainer: "items-left justify-left w-full flex flex-col mb-10",
+    cardContainer:
+      "items-left justify-left w-full flex flex-col mb-10 pl-1 pr-5",
     headers:
       "text-fontColor-primary text-smallSubheader md:text-largeSubheader text-left mb-1 font-header",
-    subHeader: "flex flex-row justify-left lg:justify-between px-14 sm:px-24",
+    subHeader: "flex flex-row justify-between px-3 md:px-24",
     experienceCardContainer:
-      "px-10 sm:px-20 justify-between w-full flex flex-col lg:flex-row gap-3",
+      "sm:px-20 justify-between w-full flex flex-col lg:flex-row gap-3",
     iconContainer: "flex flex-row sm:gap-2 justify-center items-center mt-5",
   };
   const GithubIcon = FaGithub as React.ComponentType<

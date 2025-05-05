@@ -17,7 +17,7 @@ export function ExperienceCard({
   const OpenIcon = IoMdOpen as unknown as React.FC;
   const styles = {
     container:
-      "relative flex flex-row items-center justify-center border border-black rounded-lg p-4 m-2 w-96 bg-white shadow-md",
+      "relative flex flex-row items-center justify-center border border-black rounded-lg p-4 m-2 w-full lg:w-1/3 bg-white shadow-md",
     image: "w-20 h-20 object-contain flex-shrink-0 mx-4",
     textContainer: "flex flex-col pr-10",
     textOne:

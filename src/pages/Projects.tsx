@@ -5,7 +5,7 @@ import { ExpandedProjectCard } from "../components/ExpandedProjectCard";
 const Projects = () => {
   const styles = {
     container:
-      "flex flex-col w-full items-center justify-center bg-components-background min-h-screen overflow-y-auto pt-28 pb-20 px-10",
+      "flex flex-col w-full items-center justify-center bg-components-background min-h-screen overflow-y-auto pt-20 pb-10 px-10",
     headers:
       "text-fontColor-primary text-smallSubheader md:text-largeSubheader text-left w-3/4 mb-1 font-header",
     subContainer: "flex flex-col w-full items-center justify-center pb-10",
@@ -100,30 +100,34 @@ const Projects = () => {
           imageSrc={["/giboston.png"]}
         />
       </div>
-      <ExpandedProjectCard
-        title="Taylor Swiftalyzer"
-        description="The Taylor Swiftalyzer was a project completed for my Natural Language 
+      <div>
+        <ExpandedProjectCard
+          title="Taylor Swiftalyzer"
+          description="The Taylor Swiftalyzer was a project completed for my Natural Language 
         Processing class. It explored various NLP and ML techniques using Swift's discography.
         Specifically, we used linear and logistic regression to predict the popularity of Swift's songs.
         In addition, we used the NLTK sentiment analysis library to analyze the sentiment of her songs, 
         classifying them as positive or negative. We also used topic modeling to identify major themes
         across her work."
-        github_link="https://github.com/neetidesai/taylorswiftalyzer"
-        tags={["Python"]}
-        alignment="right"
-        imageSrc={["/taylorswiftalyzer.png"]}
-      />
-      <ExpandedProjectCard
-        title="Image Processor"
-        description="An image editing application with the ability to load, filter, edit, and 
+          github_link="https://github.com/neetidesai/taylorswiftalyzer"
+          tags={["Python"]}
+          alignment="right"
+          imageSrc={["/taylorswiftalyzer.png"]}
+        />
+      </div>
+      <div>
+        <ExpandedProjectCard
+          title="Image Processor"
+          description="An image editing application with the ability to load, filter, edit, and 
         save an image, as well as visualize the color distributions of the image. Utilizes several 
         OOD design principles including Model, View, Controller, 
         and the command design pattern."
-        github_link="https://github.com/neetidesai/Image-Processor"
-        tags={["Java"]}
-        alignment="left"
-        imageSrc={["/imageprocessor.png"]}
-      />
+          github_link="https://github.com/neetidesai/Image-Processor"
+          tags={["Java"]}
+          alignment="left"
+          imageSrc={["/imageprocessor.png"]}
+        />
+      </div>
     </div>
   );
 };

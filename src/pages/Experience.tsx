@@ -5,9 +5,9 @@ import { useLocation } from "react-router-dom";
 const Experience = () => {
   const styles = {
     container:
-      "flex flex-col w-full items-center justify-center bg-components-background min-h-screen overflow-y-auto pt-28 pb-20",
+      "flex flex-col w-full items-center justify-center bg-components-background min-h-screen overflow-y-auto pt-20 pb-10 px-2",
     headers:
-      "text-fontColor-primary text-smallSubheader md:text-largeSubheader text-left w-3/4 mb-1 font-header",
+      "text-fontColor-primary text-smallSubheader md:text-largeSubheader text-center sm:text-left w-full md:w-3/4 mb-1 font-header",
     subContainer: "flex flex-col w-full items-center justify-center pb-10",
     linkContainer: "flex flex-col w-full items-center justify-center ",
   };

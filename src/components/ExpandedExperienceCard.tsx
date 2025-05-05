@@ -15,10 +15,11 @@ export function ExpandedExperienceCard({
 }: ExpandedExperienceCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const styles = {
-    container: `flex flex-row ${isExpanded ? "items-start" : "items-center"} justify-start border border-black rounded-lg p-4 m-2 bg-white shadow-md w-3/4 relative`,
+    container: `flex flex-row ${isExpanded ? "items-start" : "items-center"} justify-start border border-black rounded-lg p-4 m-2 bg-white shadow-md w-full md:w-3/4 relative`,
     image: "h-20 w-20 md:w-28 md:h-28 object-contain flex-shrink-0 mr-4",
     contentContainer: "flex flex-col flex-1",
-    headerRow: "flex flex-row items-center justify-between w-full gap-2 pr-4",
+    headerRow:
+      "flex flex-col sm:flex-row items-center jusify-center sm:justify-between w-full gap-2 sm:pr-4",
     title:
       "text-smallBody md:text-smallSubheader text-fontColor-secondary font-header md:break-words md:flex-1",
     date: "text-smallButton md:text-[1.25rem] text-fontColor-secondary font-header md:whitespace-nowrap md:flex-shrink-0 ml-4",
