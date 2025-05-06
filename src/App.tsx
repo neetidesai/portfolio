@@ -1,6 +1,7 @@
 import "./App.css";
 
 import React from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
@@ -24,6 +25,7 @@ function App() {
             <Route path="/experience" element={<Experience />} />
           </Routes>
           <CopyrightBanner />
+          <SpeedInsights />
         </Router>
       </div>
     </ThemeProvider>
