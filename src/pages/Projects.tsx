@@ -62,11 +62,11 @@ const Projects = () => {
           description="Shelterlink is a project developed by Northeastern's Code4Community, a student 
         organization dedicated to building software solutions for nonprofits in the Boston area. 
         Shelterlink is an iOS app built using React native, Typescript, and DynamoDB that connects 
-        unhoused youth to shelters and other resources in the Boston area. I was the technical lead on 
+        unhoused youth to shelters and other resources in and around Boston. I was the technical lead on 
         this team, planning sprints and writing tickets for four developers, and running weekly developer
         meetings to discuss the direction of the project and troubleshoot bugs and other blockers.
-        I also interfaced with the design team and product manager to ensure the app met the client's specfications. I also 
-        completed development work on this project, notably handing user autherntication using AWS 
+        I also interfaced with the design team and product manager to ensure the app met the client's specfications. Additionally, I 
+        completed development work on this project, notably handing user authentication using AWS 
         Cognito, as well as designing all backend specifications and some frontend screens, including 
         the detailed shelter screen shown in the two rightmost images."
           tags={[

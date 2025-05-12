@@ -93,7 +93,7 @@ const Experience = () => {
           title={"Husky Ambassador"}
           logo={"/northeastern.png"}
           description={
-            "Led informative and engaging tours for pospective students and their families.\nContinuously learned and memorized new information to ensure tours were accurate and up-to-date.\nHelped staf front desk, checking students in for tours and answering student questions abou the university."
+            "Led informative and engaging tours for pospective students and their families.\nContinuously learned and memorized new information to ensure tours were accurate and up-to-date.\nHelped staff front desk, checking students in for tours and answering student questions about the university."
           }
           dates={"Mar. 2023 - May 2025"}
         />
@@ -111,7 +111,7 @@ const Experience = () => {
           title={"Software Engineer at Code4Community"}
           logo={"/c4c.jpeg"}
           description={
-            "Collaborated on multiple teams to develop software solutions for Boston-based nonprofits.\nCompleted tickets weekly and helped mentor youn ger developers and new team members."
+            "Collaborated on multiple teams to develop software solutions for Boston-based nonprofits.\nCompleted tickets weekly and helped mentor younger developers and new team members."
           }
           dates={"Sep. 2022 - Nov. 2024"}
         />
