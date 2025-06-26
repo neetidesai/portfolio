@@ -108,7 +108,13 @@ const Home = () => {
         </div>
         <div className={styles.experienceCardContainer}>
           <ExperienceCard
-            title="Software Engineer Co-op"
+            title="Software Engineer"
+            company="Morse Corp"
+            logo="/morse.jpeg"
+            onClick={() => window.open("/experience#morse_fulltime", "_blank")}
+          />
+          <ExperienceCard
+            title="Python Software Engineer Co-op"
             company="Morse Corp"
             logo="/morse.jpeg"
             onClick={() => window.open("/experience#morse", "_blank")}
@@ -118,12 +124,6 @@ const Home = () => {
             company="E Ink"
             logo="/e-ink.png"
             onClick={() => window.open("/experience#e-ink", "_blank")}
-          />
-          <ExperienceCard
-            title="Discrete Structures Teaching Assistant"
-            company="Northeastern University"
-            logo="/northeastern.png"
-            onClick={() => window.open("/experience#northeastern", "_blank")}
           />
         </div>
       </div>

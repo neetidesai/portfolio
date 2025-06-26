@@ -46,9 +46,19 @@ const Experience = () => {
 
       <div className={styles.subContainer}>
         <h1 className={styles.headers}>Work Experience</h1>
+        <div id="morse_fulltime" className={styles.linkContainer}>
+          <ExpandedExperienceCard
+            title={"Software Engineer at Morse Corp."}
+            logo={"/morse.jpeg"}
+            description={
+              "Using React, Python, FastAPI, and PostgreSQL to develop a data management platform."
+            }
+            dates={"Jun. 2025 - Present"}
+          />
+        </div>
         <div id="morse" className={styles.linkContainer}>
           <ExpandedExperienceCard
-            title={"Software Engineer Co-op at Morse Corp."}
+            title={"Python Software Engineer Co-op at Morse Corp."}
             logo={"/morse.jpeg"}
             description={
               "Designed, developed, and deployed 15+ user-driven features for computer vision testing Python software packages in the JATIC project, contributing to three MVPs for the Chief Digital and AI Office.\nUtilized PySpark to optimize ETL pipelines and execute complex data transformations.\nIntegrated packages within existing machine learning pipelines.\nDeveloped features to optimize model performance by identifying mislabeled data and classifying data difficulty within training sets.\nActively contributed in Agile ceremonies, including daily stand-ups, sprint retrospectives, and feature demos.\nEffectively leveraged software development best practices, achieving 100% test coverage of software capabilities with unit and integration tests and writing robust end user documentation utilizing the Diataxis framework."
