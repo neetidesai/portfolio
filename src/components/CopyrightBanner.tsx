@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const styles = {
-  container: "bg-components-primary bottom-0 w-full z-10 px-5",
+  container: "bg-components-primary bottom-0 w-full px-5",
   text: "text-fontColor-darkAccent text-smallBody font-body",
 };
 
@@ -20,7 +20,7 @@ export default function CopyrightBanner() {
   >;
   return (
     <div className={styles.container}>
-      <div className="flex flex-col sm:flex-row items-center justify-between pb-2">
+      <div className="flex flex-col sm:flex-row items-center justify-between">
         <h1 className={styles.text}>
           © 2025 by Neeti Desai | Built by Neeti Desai
         </h1>
