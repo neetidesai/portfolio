@@ -109,13 +109,13 @@ const Home = () => {
         <div className={styles.experienceCardContainer}>
           <ExperienceCard
             title="Software Engineer"
-            company="Morse Corp"
+            company="Morse Corp."
             logo="/morse.jpeg"
             onClick={() => window.open("/experience#morse_fulltime", "_blank")}
           />
           <ExperienceCard
             title="Python Software Engineer Co-op"
-            company="Morse Corp"
+            company="Morse Corp."
             logo="/morse.jpeg"
             onClick={() => window.open("/experience#morse", "_blank")}
           />

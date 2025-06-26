@@ -30,6 +30,7 @@ const categories = [
       <KnowledgeCard title="React Native" logo="/react.png" />,
       <KnowledgeCard title="Node.js" logo="/nodejs.png" />,
       <KnowledgeCard title="Express.js" logo="/expressjs.png" />,
+      <KnowledgeCard title="FastAPI" logo="/fastapi.png" />,
       <KnowledgeCard title="Django" logo="/django.png" />,
       <KnowledgeCard title="OpenCV" logo="/opencv.jpeg" />,
       <KnowledgeCard title="PySpark" logo="/pyspark.jpeg" />,
