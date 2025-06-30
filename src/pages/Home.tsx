@@ -58,10 +58,10 @@ const Home = () => {
             I recently graduated from Northeastern University's honors program
             with a bachelor's degree in computer science and behavioral
             neuroscience. Currently, I am a full-stack software engineer at
-            Morse Corp. in Cambridge, MA. I also have experience in machine
-            learning and data science, and am excited to grow and develop my
-            skills as an engineer! I would love to connect - my github,
-            linkedin, and email are linked below.
+            Morse Corp. I also have experience in machine learning and data
+            science, and am excited to grow and develop my skills as an
+            engineer! I would love to connect - my github, linkedin, and email
+            are linked below.
           </p>
 
           <div className={styles.iconContainer}>

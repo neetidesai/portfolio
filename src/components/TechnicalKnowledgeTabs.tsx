@@ -35,20 +35,25 @@ const categories = [
       <KnowledgeCard title="OpenCV" logo="/opencv.jpeg" />,
       <KnowledgeCard title="PySpark" logo="/pyspark.jpeg" />,
       <KnowledgeCard title="Tensorflow" logo="/tensorflow.png" />,
-      <KnowledgeCard title="Google Firebase" logo="/firebase.png" />,
+    ],
+  },
+  {
+    name: "Cloud & DevOps",
+    items: [
       <KnowledgeCard title="AWS Cognito" logo="/cognito.png" />,
       <KnowledgeCard title="AWS SES" logo="/ses.png" />,
       <KnowledgeCard title="AWS Lambda" logo="/lambda.png" />,
       <KnowledgeCard title="AWS Amplify" logo="/amplify.png" />,
+      <KnowledgeCard title="Google Firebase" logo="/firebase.png" />,
+      <KnowledgeCard title="Docker" logo="/docker.png" />,
+      <KnowledgeCard title="Github Actions" logo="/github-actions.png" />,
     ],
   },
   {
     name: "Tools",
     items: [
-      <KnowledgeCard title="Docker" logo="/docker.png" />,
       <KnowledgeCard title="Github" logo="/github.png" />,
       <KnowledgeCard title="Gitlab" logo="/gitlab.png" />,
-      <KnowledgeCard title="Github Actions" logo="/github-actions.png" />,
       <KnowledgeCard title="SVN" logo="/svn.png" />,
       <KnowledgeCard title="Postman" logo="/postman.png" />,
       <KnowledgeCard title="Swagger" logo="/swagger.png" />,
@@ -61,7 +66,7 @@ export function TechnicalKnowledgeTabs() {
     <div className="flex w-full items-center justify-center px-4 pt-3">
       <div className="w-full md:w-[640px]">
         <TabGroup>
-          <TabList className="flex flex-wrap gap-2 sm:gap-4 justify-center">
+          <TabList className="flex flex-wrap justify-center">
             {categories.map(({ name }) => (
               <Tab
                 key={name}
