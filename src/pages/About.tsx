@@ -6,7 +6,7 @@ const About = () => {
   const styles = {
     container:
       "flex flex-col w-full items-start justify-left bg-components-background min-h-screen overflow-y-auto pt-20 pb-10 px-10",
-    row: "flex flex-col md:flex-row gap-5",
+    row: "flex flex-col lg:flex-row gap-5",
     col: "flex flex-col items-center justify-center",
     technicalKnowledge: "flex flex-col w-full items-center",
     categoryAndCardContainer: "flex flex-col sm:w-2/3",
