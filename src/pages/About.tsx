@@ -27,8 +27,8 @@ const About = () => {
         <div>
           <h1 className={styles.title}>About Me</h1>
           <p className={styles.description}>
-            Currently, I am a full-stack software engineer at Morse Corp. To
-            read more about my current and previous work, check out my{" "}
+            Currently, I am a backend software engineer at Morse Corp. To read
+            more about my current and previous work, check out my{" "}
             <Link to="/experience" className={styles.link}>
               experience page
             </Link>
